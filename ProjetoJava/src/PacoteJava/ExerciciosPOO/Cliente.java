@@ -1,39 +1,31 @@
 package PacoteJava.ExerciciosPOO;
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Cliente {
-	private int	cadastro;
-	private int	codigo;
-	private String	produto = new String();
 	
-	public int getCadastro() {
-		return cadastro;
+	
+	private String primeiroNome;
+	private String codigoMatricula;
+	private	String identGenero;
+	 
+	
+	public Cliente (String primeiro,String meio,String ultimo)
+	{
+	 primeiroNome=primeiro;
+	 codigoMatricula=meio;
+	 identGenero=ultimo;
 	}
-	public void setCadastro(int cadastro) {
-		this.cadastro = cadastro;
-	}
-	public int getCodigo() {
-		return codigo;
-	}
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
-	}
-	public String getProduto() {
-		return produto;
-	}
-	public void setProduto(String produto) {
-		this.produto = produto;
+	public String getCadastroPessoal()
+	{
+		String cadastroPessoal = primeiroNome+" "+codigoMatricula+" "+identGenero;
+		return cadastroPessoal;
+		
+	 
 	}
 	
-	public void show() {
-		System.out.print("\nCadastro: " + this.cadastro);
-		System.out.print("\nCodigo: " + this.codigo);
-		System.out.print("\nProduto: " + this.produto);
-	}
-	
-	public Cliente(){
-		this.cadastro = 0;
-		this.codigo = 10;
-		this.produto = "none";
-	}
 }
+
+
+		
+		
+	

@@ -20,26 +20,40 @@ public class Matriz1 {
 			System.out.println("\nDigite o valor da linha: "+i+" coluna "+j);
 			matrizN1[i][j]=ler.nextInt();
 		
-			
-			
-			
-			//soma 
-//			matrizSoma[i][j]= matrizN1[i][j]+ matrizN2[i][j];
-					
-			
 		}
+		}
+		
+			for (int i=0; i<4; i++) {
+			for (int j=0; j<6; j++) {
+					System.out.println("\nDigite o valor da linha: "+i+" coluna "+j);
+					matrizN2[i][j]=ler.nextInt();
+			}
+			}
+			for (int i=0; i<4; i++) { //percorre linha matriz
+				for (int j=0; j<5; j++) { //percorre coluna matriz
+			matrizSoma[i][j]= matrizN1[i][j]+ matrizN2[i][j];
+					
+				}
+		}
+				//imprimir soma//
+				
+				for (int i=0; i<4; i++) { 
+				System.out.println("n");//pula uma linha
+				for (int j=0; j<5; j++) { //percorre coluna matriz
+				System.out.println(matrizSoma[i][j]+"t");
+					}
+				}
+		
+	}
+}
 
-		
-		
 //		}
 //		linha 18 ate linha 30 leu todas as posições da matrizN1
 //		ler todas a posições da matrizN2
 //		somar cada poção especifica da matrizN1 com as posições especificas de N2 e salvar na posição especifica da matrizSoma
-	//	repit so q com multiplicação 
+// repit so q com multiplicação
 //	}
-		
-		
-		
+
 //		for (int i=0; i<4; i++) {
 //			System.out.println("\n");
 //			for (int j=0; j<6; j++) {
@@ -53,11 +67,4 @@ public class Matriz1 {
 //				System.out.print(matrizmultiplica[i][j]+"\t");	
 //	}
 //}
-	}
-		}
-}
-	
-			
-
-
-
+}}}
