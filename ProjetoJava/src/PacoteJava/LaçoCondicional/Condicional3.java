@@ -1,4 +1,4 @@
-package PacoteJava;
+package PacoteJava.LaçoCondicional;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class Condicional3 {
 		idade = ler.nextInt( );
 		
 		
-		if ((idade => 10) && (<= 14 )) {
+		if ((idade => 10 <= 14 )) {
 			System.out.println("Você pertence a categoria infantil");
 			
 		} else if (idade => 15 || <= 17 ) {
@@ -24,5 +24,11 @@ public class Condicional3 {
 				
 			else (idade =18 || >=25 ) {
 				System.out.printf("Você pertence a categoria adulto");{
+	}
+}
+			
+			
+			
+}
 	}
 }

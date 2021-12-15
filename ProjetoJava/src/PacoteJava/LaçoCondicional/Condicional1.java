@@ -1,4 +1,4 @@
-package PacoteJava;
+package PacoteJava.LaçoCondicional;
 
 import java.util.*;
 

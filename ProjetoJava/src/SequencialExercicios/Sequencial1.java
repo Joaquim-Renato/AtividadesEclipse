@@ -1,4 +1,4 @@
-package PacoteJava;
+package SequencialExercicios;
 
 import java.util.Scanner;
 	public class Sequencial1 {
