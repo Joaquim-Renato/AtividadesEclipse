@@ -1,16 +1,27 @@
 package Encapsulamento;
 
-public class Cachorro {
-	public static void main (String args[])
-	{
-		Animal cachorro = new Animal();
-		cachorro.setNome("Bolinha");
-		cachorro.setIdade(2);
-		cachorro.setSom("Latido");
+public class Cachorro extends Animal{
+	
+
+		private String correr = new String();
+
+		public String getCorrer() {
+			return correr;
+		}
+
+		public void setCorrer(String correr) {
+			this.correr = correr;
+		}
 		
-			System.out.println(cachorro.getNome());
-			System.out.println(cachorro.getIdade());
-			System.out.println(cachorro.getSom());
+		public Cachorro() {
+			this.correr = "correr";
+		}
+		
+		public void locomocao() {
 			
+			System.out.println("locomocao: " + getCorrer());
+			
+		}
+		
+
 	}
-}

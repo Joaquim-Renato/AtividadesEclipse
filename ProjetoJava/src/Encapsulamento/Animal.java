@@ -2,9 +2,22 @@ package Encapsulamento;
 
 public class Animal {
 
-	private String nome;
+	private String nome= new String();
 	private int idade;
-	private String som;
+	private String som = new String();
+	
+	//duvida nesse campo...
+	public Animal() {
+		this.nome = "nenhum";
+		this.idade = 0;
+		this.som = "nenhum";
+	}
+	
+	public void mostrarDados() {
+		System.out.println("Animl: " + getNome());
+		System.out.println("Idade: " + getIdade());
+		System.out.println("som: " + getSom());
+	}
 	
 	public String getNome() {
 		return nome;

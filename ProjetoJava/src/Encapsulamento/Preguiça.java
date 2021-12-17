@@ -1,16 +1,27 @@
 package Encapsulamento;
 
-public class Preguiça {
-	public static void main (String args[])
-	{
-		Animal preguica = new Animal();
-		preguica.setNome("Pegriçinha");
-		preguica.setIdade(2);
-		preguica.setSom("Som do amor");
-		
-			System.out.println(preguica.getNome());
-			System.out.println(preguica.getIdade());
-			System.out.println(preguica.getSom());
-}
-}
+public class Preguiça extends Animal {
 
+		
+		private String correr = new String();
+
+		public String getCorrer() {
+			return correr;
+		}
+
+		public void setCorrer(String correr) {
+			this.correr = correr;
+		}
+		
+		public Preguiça() {
+			this.correr = "Subir Arvore";
+		}
+		
+		public void locomocao() {
+			
+			System.out.println("locomocao: " + getCorrer());
+			
+		}
+		
+
+	}
