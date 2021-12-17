@@ -14,7 +14,7 @@ public class Animal {
 	}
 	
 	public void mostrarDados() {
-		System.out.println("Animl: " + getNome());
+		System.out.println("Animal: " + getNome());
 		System.out.println("Idade: " + getIdade());
 		System.out.println("som: " + getSom());
 	}

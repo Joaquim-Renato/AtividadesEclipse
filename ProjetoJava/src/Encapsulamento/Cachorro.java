@@ -2,7 +2,14 @@ package Encapsulamento;
 
 public class Cachorro extends Animal{
 	
-
+	public static void main(String[] args) {
+	Cachorro cachorro = new Cachorro();
+	Animal ler = new Animal();
+	ler.setNome(null);
+	ler.getIdade();
+	ler.getSom();
+	
+}
 		private String correr = new String();
 
 		public String getCorrer() {
