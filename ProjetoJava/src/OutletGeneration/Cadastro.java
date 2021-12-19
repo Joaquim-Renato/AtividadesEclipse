@@ -13,8 +13,8 @@ import java.util.Scanner;
 	boolean cadastrar = false;
 	int pergunta; 
 	
-		
-		System.out.println("Deseja se cadastrar ?: |1|Sim|2|Não ");
+		System.out.println("Bem vindo ao Outlet Generation!!!!");
+		System.out.println("Efetuar Login: |1|Sim|2|Não ");
 		pergunta = ler.nextInt();
 	
 	
@@ -25,7 +25,7 @@ import java.util.Scanner;
 		
 		}else {
 			
-			System.out.println("Cliente não desejou se cadastrar");
+			System.out.println("Cliente não desejou efetuou o login1");
 			cadastrar = false;
 		}
 		
