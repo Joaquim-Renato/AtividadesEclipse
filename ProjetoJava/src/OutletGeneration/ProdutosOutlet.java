@@ -27,7 +27,7 @@ public class ProdutosOutlet extends LojaOnline {
     	
  
     	c.cadastro1();
-    	System.out.println("Digite Camisa, Mochila, Boné ou Garrafa térmica: ");
+    	System.out.println("Selecione seu1 produto: Camisa, Mochila, Boné ou Garrafa térmica: ");
     	escolha = ler.nextLine();
     	this.setProduto(escolha);
     	
