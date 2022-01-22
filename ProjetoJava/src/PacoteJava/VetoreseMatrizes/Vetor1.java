@@ -4,30 +4,25 @@ import java.util.Scanner;
 
 public class Vetor1 {
 	
-public static void main(String[] args) 
-{
-	Scanner ler = new Scanner(System.in);
-	float[] nota = new float [5];
-	
-	
-	for (int i = 0; i<5; i++) {
-		System.out.println("Entre com a nota:");
-		nota[i]=ler.nextFloat();
-		}
-	
-	for (int i = 0; i<5; i++);
-	{
-		System.out.println("Nota"+i+1+"="+nota[i]);
-		
-	}
-		double max = nota[0];
-		for(int i=1; i<nota.length; i++);
-		if (nota[i] > max)
-			max=nota[i];
-		{
-		System.out.println("A nota máxima é:"+max);
-		}
-
-}
+		public static void main(String[] args) {
+			int ponto[] = new int[5], n, maiorPonto=0;
+			Scanner ler = new  Scanner(System.in);
+			
+			for (n=0; n<5; n++) 
+			{
+				System.out.print("Digite a "+ (n+1) + "ª pontuação: ");
+				ponto[n] = ler.nextInt();
+				if (ponto[n] > maiorPonto) 
+				{
+					maiorPonto = ponto[n];
+				}
 			}
+			
+			for (n=0; n<5; n++) 
+			{
+				System.out.println("\nA "+ (n+1) + "ª pontuação é " + ponto[n]);
+			}
+			System.out.println("\nA maior pontuação é "+ maiorPonto);
+		}
+	}
 

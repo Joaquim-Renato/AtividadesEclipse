@@ -1,12 +1,12 @@
 package ProjetoGenBL1;
 
-public class LojaOnline {
+public abstract class LojaOnline {
 	
 	private String usuario;
 	private String senha;
 	private String Cpf;
 
-	
+	abstract void Concluido();
 
 	public String getUsuario() {
 		return usuario;
@@ -35,4 +35,3 @@ public class LojaOnline {
 	
 	 
 }
-
